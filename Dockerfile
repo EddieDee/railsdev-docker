@@ -61,9 +61,9 @@ RUN \
 # Install jruby
 RUN \
   wget -q $JRUBY_TARFILE_URL -O /tmp/$JRUBY_TARFILE && \
-  mdkir -p /opt/rubies && \
+  mkdir -p /opt/rubies && \
   tar -xzf /tmp/$JRUBY_TARFILE -C /opt/rubies && \
-  ln -s /opt/rubies/jruby-bin-$JRUBY_VERSION/bin/jruby /opt/rubies/jruby-bin-$JRUBY_VERSION/bin/ruby && \
+  ln -s /opt/rubies/jruby-$JRUBY_VERSION/bin/jruby /opt/rubies/jruby-$JRUBY_VERSION/bin/ruby && \
   rm -f /tmp/$JRUBY_TARFILE
 
 # Install chruby
