@@ -75,7 +75,7 @@ RUN \
   cd / && rm -rf /tmp/chruby-$CHRUBY_VERSION /tmp/$CHRUBY_TARFILE
 
 # Install rails
-RUN ["/bin/bash", "source /usr/local/share/chruby/chruby.sh && chruby ruby && gem update && gem install rails && chruby jruby && gem update && gem install rails"]
+RUN ["/bin/bash", "-c", "source /usr/local/share/chruby/chruby.sh && chruby ruby && gem update && gem install rails && chruby jruby && gem update && gem install rails"]
 
 # Add user rails
 RUN \
