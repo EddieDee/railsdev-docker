@@ -51,7 +51,7 @@ RUN \
 
 # Install MRI ruby
 RUN \
-  wget -q $JRUBY_TARFILE_URL -O /tmp/$MRIRUBY_TARFILE && \
+  wget -q $MRIRUBY_TARFILE_URL -O /tmp/$MRIRUBY_TARFILE && \
   tar xzf /tmp/$MRIRUBY_TARFILE -C /tmp && \
   cd /tmp/ruby-$MRIRUBY_MAJOR.$MRIRUBY_MINOR && \
   ./configure --prefix=/opt/rubies/ruby-$MRIRUBY_MAJOR.$MRIRUBY_MINOR && \
