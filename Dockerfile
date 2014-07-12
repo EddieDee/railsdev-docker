@@ -83,10 +83,11 @@ RUN \
   echo "source /usr/local/share/chruby/chruby.sh" >> /home/rails/.bashrc
 
 # Create mount point
-VOLUME /home/rails/projects
+VOLUME /projects
 
 # Expose network ports
 EXPOSE 3000 
 
 # Finally ...
-CMD ["/bin/bash"]
+WORKDIR /projects
+CMD su - rails && /bin/bash
