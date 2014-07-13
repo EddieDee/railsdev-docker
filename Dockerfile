@@ -89,4 +89,4 @@ VOLUME /projects
 EXPOSE 3000 
 
 # Finally ...
-CMD su - rails && /bin/bash
+CMD su -c /bin/bash rails 
