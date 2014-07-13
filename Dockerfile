@@ -89,5 +89,4 @@ VOLUME /projects
 EXPOSE 3000 
 
 # Finally ...
-WORKDIR /projects
 CMD su - rails && /bin/bash
