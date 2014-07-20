@@ -90,4 +90,4 @@ EXPOSE 3000
 
 # Finally ...
 WORKDIR /projects
-CMD sudo -E -u rails bash
+CMD sudo -E su rails
