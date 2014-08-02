@@ -3,7 +3,7 @@
 #
 # https://github.com/eg5846/railsdev-docker 
 #
-FROM ubuntu:trusty 
+FROM ubuntu:precise 
 MAINTAINER Andreas Egner <andreas.egner@web.de>
 
 # Set environment variables
