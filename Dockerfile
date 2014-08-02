@@ -34,10 +34,10 @@ ADD sources.list /etc/apt/sources.list
 # Install packages
 RUN apt-get update && apt-get dist-upgrade -y && apt-get clean
 RUN \ 
-  apt-get install -y --no-install-recommends byobu curl git git-doc iftop iperf iptraf lsof man rsync software-properties-common tree vim-nox vim-doc wget \
+  apt-get install -y --no-install-recommends byobu curl git git-doc iftop iperf iptraf lsof man rsync python-software-properties tree vim-nox vim-doc wget \
   coffeescript coffeescript-doc nodejs npm \
   gawk g++ gcc libc6-dev libsqlite3-dev libreadline6-dev libssl-dev libyaml-dev make patch zlib1g-dev \
-  autoconf automake bison libffi-dev libgdm-dev libncurses5-dev libtool pkg-config libxml2-dev libxslt1-dev sqlite3 && \
+  autoconf automake bison libffi-dev libncurses5-dev libtool pkg-config libxml2-dev libxslt1-dev sqlite3 && \
   apt-get clean
 
 # Install java
